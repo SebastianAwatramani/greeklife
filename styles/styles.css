@@ -1,0 +1,304 @@
+/*Body & element styling	*/
+	body {
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		height: 100vw;
+		position: relative;
+		font-family: Arial;
+		font-size: 17px;
+		color: rgb(32,32,32);
+		-webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+
+	}
+	body a:visited, body a:link {
+		color: #000000;
+
+	}
+	.boldLink {
+		font-variant:  small-caps;
+		font-weight: bold;
+		border-bottom: 2px solid CadetBlue;
+		text-indent: 0px;
+	}
+
+/*LIs on Admin Index*/
+
+.adminLinks {
+	list-style-type: disc;
+	font-size: 1.05em;
+	/*font-variant:  small-caps;*/
+	/*font-weight: bold;*/
+}
+
+.clickToCopy:hover {
+	cursor:  pointer;
+}
+
+.linkList h3 {
+	margin-bottom: 10px;
+	font-size: 1.0em;
+}
+
+/*Admin table styles*/
+
+#formAvailability, #formOfflineMessages {
+	width: 100%;
+	text-align:  center;
+	border-radius: 5px;
+
+}
+
+#formAvailability th, #formOfflineMessages th {
+	background-color: #827041;
+	padding: 5px;
+}
+#formAvailability td, #formOfflineMessages td {
+	background-color: #CFB87C;
+	padding: 5px 10px;
+	color: #000000;
+
+}
+
+
+
+
+/*Nav Styles*/
+	nav {
+		width: 350px;
+		height: 100%;
+		background: white;
+		/*box-shadow:  0px 0px 15px 0px #888888;*/
+		position: relative;
+		top 0;
+		float: right;
+
+		border-style: solid;
+		border-width: 1px;
+		border-color: rgb(231,231,231);
+		border-left-style: solid;
+		border-left-width: 3px;
+		border-left-color: #CFB87C;
+	}
+
+	.navUl {
+		padding: 0px 10px;
+	}
+
+	.navListHeading {
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+
+#navLogo {
+	padding: 20px 0px 10px;
+}
+
+	ul li {
+		list-style-type:  none;
+		font-size: 14.4px;
+		color: rgb(32,32,32);
+		text-indent: 10px;
+
+	}
+	ul li a:link, ul li  a:visited  {
+		color: rgb(32,32,32);
+	}
+	li.menu-item {
+		margin: 0 0 5px 15px;
+	}
+	a {
+		text-decoration: none;
+	}
+/*Main section styles*/
+	#main {
+		float: left;
+		width: 600px;
+	}
+
+	#main h1 {
+		font-size: 1.5em;
+		border-bottom: 1px solid black;
+		padding-bottom: 5px;
+	}
+
+	#main h2 {
+		font-size: 1.4em;
+	}
+	.disclaimer {
+		font-size: .7em;
+	}
+/*the .studentInfo class is used to print simple pieces of student info, such as "name: student name*/"
+	.studentInfo {
+		margin-bottom: 15px;
+	}
+	.studentInfo h3, .studentInfo p, .studentInfo input {
+		display: inline;
+	}
+	.studentInfo h3 {
+		font-size: 1.0em;
+	}
+/*Debug styles*/
+	pre {
+		z-index: 9999;
+		position: relative;
+		padding-left: 500px;
+	}
+
+	.xdebug-error {
+		padding-left: 400px;
+	}
+
+/*Header styles*/
+	header {
+		position: relative;
+		height: 150px;
+		background-color: black;
+		/*background-image: url("../images/ralphie_running6.jpg");*/
+		background-image: url("../images/bannerUCB.jpg");
+		/*background-position: 50% 45%;*/
+		background-repeat: no-repeat;
+		/*background-size: cover;*/
+		background-position: left center;
+	}
+
+	header h1 {
+		margin: 0;
+		font-family: "Helvetica Neue", Arial;
+		position: absolute;
+		/*bottom: 0px;*/
+		font-size: 2.0em;
+		color: #cfb87c;
+	  	text-shadow:
+	   	-1px -1px 2px #000,  
+	    1px -1px 2px #000,
+	    -1px 1px 2px #000,
+	    1px 1px 2px #000;
+	    vertical-align: bottom; 
+	    display: inline-block;
+	    bottom: 0px;
+		
+	}
+
+	.title {
+		position: absolute;
+		/*Center in header*/
+		right: 10px;
+		top: 50%;
+		-ms-transform: translateY(-25%);
+   		-webkit-transform: translateY(-25%);
+	    transform: translateY(-25%);
+	    font-variant:  small-caps;
+	}
+
+
+	h1 {
+		font-weight: 800;
+	}
+
+	main {
+		width: 54%;
+		margin: 0 auto;
+
+	}
+/*Defines the transparent bar at the bottom of the header*/
+	#headerLowBar {
+		width: 100%;
+		background-color: rgba(32,32,32,.7);
+		height: 26%;
+		position: absolute;
+		bottom: 0px;
+	}
+
+
+
+/*List styles for LIs in forms*/
+#organizations li  {
+	list-style-type:  disc;
+	list-style-position: inside;
+	padding: 10px 0 0px 15px;
+	text-indent: -0.9em;
+	text-align: left;
+		
+}
+
+#societyList {
+/*input[type=radio] + label */
+	margin-top: 15px;		
+	margin-bottom: 15px;	
+
+}
+
+#societyList legend, #reason legend {
+	font-weight: bold;
+}
+#reason {
+	margin: 15px 0px;
+}
+
+#societyList input[type=radio], #reason input[type=radio] {
+	/*display: inline-block;*/
+	float: left;
+}
+
+#societyList input[type=radio] + label, #reason  input[type=radio] + label  {
+	margin-left: 10px;
+	margin-bottom: 5px;
+	display: block;
+	text-indent: 5px;
+}
+
+/*Offline Message page styles*/
+
+.offlineMessageEdit {
+	margin-bottom: 10px;
+	position: relative;
+}
+.offlineMessageEdit input {
+	float: right;
+	width: 60%;
+	position: relative;
+}
+
+/*Table Styles*/
+#membersTable {
+	clear: both;
+	/*float:left;*/
+	width: 100%;
+	font-size: .8em;
+}
+
+#membersTable td {
+	max-width: 25%;
+}
+
+/*Copied to clipboard tooltip*/
+
+div#tooltip {
+	position: fixed;
+	bottom: 10px;
+	left: 0;
+	background-color: black;
+	opacity: 1.0;
+	border-radius: 0px 10px 10px 0px;
+}
+div#tooltip p {
+	margin: 0 auto;
+	color: #CFB87C;;
+	padding: 5px 15px 5px 10px;
+
+}
+
+@keyframes fadeout {
+	0% {opacity: 1;}
+	25% {opacity: .75;}
+	50% {opacity: .5;}
+	75% {display: none;}
+}
+
+/*Form Styles*/
+
+form#remove {
+	margin-top: 10px;
+}
